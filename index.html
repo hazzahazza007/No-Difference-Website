@@ -11,6 +11,43 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     crossorigin="anonymous"
   />
+  <style>
+    .social-icons {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .social-link {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .social-link img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-link img.color {
+      opacity: 0;
+    }
+
+    .social-link:hover img.white {
+      opacity: 0;
+    }
+
+    .social-link:hover img.color {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -21,11 +58,13 @@
       THINGS COMING SOON.
     </p>
     <div class="social-icons">
-      <a href="https://www.instagram.com/no.difference.band/" target="_blank" rel="noopener" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
+      <a href="https://www.instagram.com/no.difference.band/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+        <img src="https://i.imgur.com/cUXZ5C5.png" alt="Instagram White" class="white" />
+        <img src="https://i.imgur.com/bEWigGC.png" alt="Instagram Color" class="color" />
       </a>
-      <a href="https://www.youtube.com/@nodifferencehc" target="_blank" rel="noopener" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
+      <a href="https://www.youtube.com/@nodifferencehc" target="_blank" rel="noopener" aria-label="YouTube" class="social-link">
+        <img src="https://i.imgur.com/7RGzadE.png" alt="YouTube White" class="white" />
+        <img src="https://i.imgur.com/t5oNi8M.png" alt="YouTube Color" class="color" />
       </a>
     </div>
   </div>
